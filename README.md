@@ -46,7 +46,7 @@ alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gf='git ls-files | grep'
 alias gcc='git rev-list --count HEAD ^master'
-alias gbclean='git branch --merged master | grep -v "\*" | xargs --no-run-if-empty -n 1 git branch -d'
+alias gbclean='git branch --merged master | grep -v -e "master" -e "\*" | xargs --no-run-if-empty -n 1 git branch -d'
 
 alias gpoat='git push origin --all && git push origin --tags'
 alias gmt='git mergetool --no-prompt'
