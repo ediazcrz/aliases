@@ -121,4 +121,7 @@ function work_in_progress() {
         echo "WIP!!"
     fi
 }
+
+# Delete all local branches except master
+alias ggdel="git branch | grep -v \"master\" | xargs git branch -D"
 ```
