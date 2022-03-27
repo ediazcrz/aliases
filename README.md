@@ -2,6 +2,7 @@
 
 ```bash
 # Aliases
+# Git Aliases
 alias g='git'
 alias gst='git status'
 alias gd='git diff'
@@ -124,4 +125,3 @@ function work_in_progress() {
 
 # Delete all local branches except master
 alias ggdel="git branch | grep -v \"master\" | xargs git branch -D"
-```
